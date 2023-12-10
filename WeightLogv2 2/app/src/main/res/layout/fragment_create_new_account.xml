@@ -1,0 +1,78 @@
+<!-- fragment_create_new_account.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    tools:context=".controller.LoginControllers.CreateNewAccount">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/gamma"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter: Username"
+        android:textColorHint="@color/gamma"
+        android:textColor="@color/gamma"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter: Password"
+        android:textColorHint="@color/gamma"
+        android:textColor="@color/gamma"
+        app:layout_constraintTop_toBottomOf="@id/username_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@id/password_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onSubmitButtonClick" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        app:layout_constraintTop_toBottomOf="@id/password_edittext"
+        app:layout_constraintEnd_toStartOf="@id/submit_button"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onExitButtonClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

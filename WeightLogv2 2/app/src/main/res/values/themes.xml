@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WeightLogv2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/navy</item>
+        <item name="colorSecondary">@color/gamma</item>
+        <item name="colorAccent">@color/grey</item>
+
+        <item name="toolbarStyle">@style/Widget.WeightLogv2.Toolbar</item>
+
+    </style>
+
+    <style name="Widget.WeightLogv2.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:titleTextAppearance">@style/ToolbarTitleStyle</item>
+    </style>
+
+    <style name="ToolbarTitleStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/gamma</item>
+    </style>
+
+    <style name="Theme.WeightLogv2" parent="Base.Theme.WeightLogv2" />
+
+</resources>

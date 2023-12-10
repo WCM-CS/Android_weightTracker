@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    tools:context=".Menu.fragment_settings">
+
+    <TextView
+        android:id="@+id/title_text_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS Notification Settings"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/gamma"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        />
+
+    <Switch
+        android:id="@+id/switch_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On/Off"
+        android:textColor="@color/gamma"
+        app:layout_constraintTop_toBottomOf="@id/title_text_sms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:checked="false"
+        />
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        app:layout_constraintTop_toBottomOf="@id/switch_sms"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:onClick="onDoneButtonClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
